@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Obtener la lista de grupos para el usuario en FT_USER y reemplazar los espacios por comas
+GROUPS=$(id -nG "$FT_USER" | tr ' ' ',')
+
+# Imprimir la lista de grupos
+echo "$GROUPS"
